@@ -1,2 +1,2 @@
 # abguimba.github.io
-My own website/portfolio with all of my projects
+My own pelican powered website/portfolio with all of my school and side projects
