@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>abguimba</title><link href="http://abguimba.github.io/" rel="alternate"></link><link href="http://abguimba.github.io/feeds/all.atom.xml" rel="self"></link><id>http://abguimba.github.io/</id><updated>2017-06-09T00:00:00+02:00</updated><entry><title>Gunship</title><link href="http://abguimba.github.io/gunship.html" rel="alternate"></link><published>2017-06-09T00:00:00+02:00</published><updated>2017-06-09T00:00:00+02:00</updated><author><name>Abraham Guimbao</name></author><id>tag:abguimba.github.io,2017-06-09:/gunship.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.gunshipmusic.com/"&gt;Gunship&lt;/a&gt; is a &lt;em&gt;retro synthwave&lt;/em&gt; artist out of the UK.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=uYRZV8dV10w"&gt;Revel in Your Time&lt;/a&gt;, 
-&lt;a href="https://www.youtube.com/watch?v=-nC5TBv3sfU"&gt;Tech Noir&lt;/a&gt;, 
-&lt;a href="https://www.youtube.com/watch?v=Jv1ZN8c4_Gs"&gt;Fly for Your Life&lt;/a&gt; 
-and 
-&lt;a href="https://www.youtube.com/watch?v=-HYRTJr8EyA"&gt;The Mountain&lt;/a&gt; 
-are all quality songs by Gunship. Check out those amazing music videos!&lt;/p&gt;
-&lt;p&gt;Also take a look at other retro synthwave artists such as
-&lt;a href="https://trevorsomething.bandcamp.com/"&gt;Trevor Something&lt;/a&gt;, 
-&lt;a href="https://droidbishop.bandcamp.com/"&gt;Droid Bishop …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://www.gunshipmusic.com/"&gt;Gunship&lt;/a&gt; is a &lt;em&gt;retro synthwave&lt;/em&gt; artist out of the UK.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=uYRZV8dV10w"&gt;Revel in Your Time&lt;/a&gt;, 
-&lt;a href="https://www.youtube.com/watch?v=-nC5TBv3sfU"&gt;Tech Noir&lt;/a&gt;, 
-&lt;a href="https://www.youtube.com/watch?v=Jv1ZN8c4_Gs"&gt;Fly for Your Life&lt;/a&gt; 
-and 
-&lt;a href="https://www.youtube.com/watch?v=-HYRTJr8EyA"&gt;The Mountain&lt;/a&gt; 
-are all quality songs by Gunship. Check out those amazing music videos!&lt;/p&gt;
-&lt;p&gt;Also take a look at other retro synthwave artists such as
-&lt;a href="https://trevorsomething.bandcamp.com/"&gt;Trevor Something&lt;/a&gt;, 
-&lt;a href="https://droidbishop.bandcamp.com/"&gt;Droid Bishop&lt;/a&gt;,
-&lt;a href="https://fm84.bandcamp.com/"&gt;FM-84&lt;/a&gt;
-and 
-&lt;a href="https://danieldeluxe.bandcamp.com/"&gt;Daniel Deluxe&lt;/a&gt;.&lt;/p&gt;</content></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>abguimba</title><link href="http://abguimba.github.io/" rel="alternate"></link><link href="http://abguimba.github.io/feeds/all.atom.xml" rel="self"></link><id>http://abguimba.github.io/</id><updated>2017-06-09T00:00:00+02:00</updated><entry><title>minishell</title><link href="http://abguimba.github.io/minishell.html" rel="alternate"></link><published>2017-06-09T00:00:00+02:00</published><updated>2017-06-09T00:00:00+02:00</updated><author><name>Abraham Guimbao</name></author><id>tag:abguimba.github.io,2017-06-09:/minishell.html</id><summary type="html">&lt;p&gt;Minishell
+As beautiful as a&amp;nbsp;shell&lt;/p&gt;
+&lt;p&gt;@42Born2Code&lt;/p&gt;
+&lt;p&gt;Summary:  The objective of this project is for you to create the simplest start of a&amp;nbsp;shell.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gunshipmusic.com/"&gt;minishell&lt;/a&gt; is a &lt;em&gt;retro synthwave&lt;/em&gt; artist out of the &lt;span class="caps"&gt;UK&lt;/span&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Minishell
+As beautiful as a&amp;nbsp;shell&lt;/p&gt;
+&lt;p&gt;@42Born2Code&lt;/p&gt;
+&lt;p&gt;Summary:  The objective of this project is for you to create the simplest start of a&amp;nbsp;shell.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gunshipmusic.com/"&gt;minishell&lt;/a&gt; is a &lt;em&gt;retro synthwave&lt;/em&gt; artist out of the &lt;span class="caps"&gt;UK&lt;/span&gt;.&lt;/p&gt;</content></entry><entry><title>Test Post</title><link href="http://abguimba.github.io/test-post.html" rel="alternate"></link><published>1997-08-29T02:14:00+02:00</published><updated>1997-08-29T02:14:00+02:00</updated><author><name>My Name</name></author><id>tag:abguimba.github.io,1997-08-29:/test-post.html</id><summary type="html">&lt;p&gt;This is an&amp;nbsp;article&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;Hope&amp;#8221; is the thing with feathers -&amp;nbsp;&amp;#8230;&lt;/p&gt;</content><category term="testtag"></category></entry><entry><title>Test Post 2</title><link href="http://abguimba.github.io/test-post-2.html" rel="alternate"></link><published>1997-08-29T02:14:00+02:00</published><updated>1997-08-29T02:14:00+02:00</updated><author><name>My Name</name></author><id>tag:abguimba.github.io,1997-08-29:/test-post-2.html</id><summary type="html">&lt;p&gt;This is an&amp;nbsp;article&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;Hope&amp;#8221; is the thing with feathers -&amp;nbsp;&amp;#8230;&lt;/p&gt;</content><category term="testtag"></category></entry><entry><title>Test Post 3</title><link href="http://abguimba.github.io/test-post-3.html" rel="alternate"></link><published>1997-08-29T02:14:00+02:00</published><updated>1997-08-29T02:14:00+02:00</updated><author><name>My Name</name></author><id>tag:abguimba.github.io,1997-08-29:/test-post-3.html</id><summary type="html">&lt;p&gt;This is an&amp;nbsp;article&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;Hope&amp;#8221; is the thing with feathers -&amp;nbsp;&amp;#8230;&lt;/p&gt;</content><category term="testtag"></category></entry><entry><title>Test Post 4</title><link href="http://abguimba.github.io/test-post-4.html" rel="alternate"></link><published>1997-08-29T02:14:00+02:00</published><updated>1997-08-29T02:14:00+02:00</updated><author><name>My Name</name></author><id>tag:abguimba.github.io,1997-08-29:/test-post-4.html</id><summary type="html">&lt;p&gt;This is an&amp;nbsp;article&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;Hope&amp;#8221; is the thing with feathers -&amp;nbsp;&amp;#8230;&lt;/p&gt;</content><category term="testtag"></category></entry></feed>
