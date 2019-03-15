@@ -3,11 +3,16 @@
 <head>
 		<title>abguimba &mdash; Test Post 3</title>
 		<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       function toggleDarkLight() {
       var body = document.getElementById("body");
       var currentClass = body.className;
       body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+
+      var elem = document.getElementById("dark-mode-button");
+      if (elem.value=="🌛") elem.value = "🌞";
+      else elem.value = "🌛";
       }
     </script>
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -24,7 +29,7 @@
 
 <body id="body" class="light-mode" class="home blog custom-background single-author" >
   <div class="darkbutton">
-    <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode"><font size="+1">🌛</font></button>
+    <button id="dark-mode-button" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode"><font size="+1">🌛</font></button>
   </div> 
   
   <div id="container">
@@ -35,6 +40,10 @@
 		<div id="menu">
 			<div class="menu-navigation-container">
 				<ul id="menu-navigation" class="menu">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://github.com/abguimba"></a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.linkedin.com/in/abraham-guimbao-parra"></a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.twitter.com/abguimba"></a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://abguimba.github.io/CV.pdf"></a></li>
 						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://abguimba.github.io/category/42.html">42</a></li>
 						<li class="active" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://abguimba.github.io/category/cat1.html">cat1</a></li>
 						<li  class="active" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://github.com/abguimba">Github</a></li>
