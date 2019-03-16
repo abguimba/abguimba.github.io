@@ -24,7 +24,6 @@
       var body = document.getElementById("body");
       var currentClass = body.className;
       body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-
         if (document.getElementById("dark-mode-button").innerText == "🌛")
       {
         document.getElementById("dark-mode-button").innerText = "🌞";
@@ -86,11 +85,24 @@
 	<h2>Categories on <span>abguimba</span> &hellip;</h2>
 </div>
 		</div>
-	
+
+    <ul class="tagcloud">
+        <li class="tag-3">
+            <a href="https://abguimba.github.io/tag/42.html">
+            42
+            </a>
+        </li>
+        <li class="tag-1">
+            <a href="https://abguimba.github.io/tag/testtag.html">
+            testtag
+            </a>
+        </li>
+    </ul>
+
 		<div id="contents">
 <ul>
-    <li><a href="https://abguimba.github.io/category/42.html">42</a></li>
     <li><a href="https://abguimba.github.io/category/cat1.html">cat1</a></li>
+    <li><a href="https://abguimba.github.io/category/posts.html">posts</a></li>
 </ul>
 		</div>
 		
