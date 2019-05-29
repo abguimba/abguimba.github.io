@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/abguimba
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://abguimba.github.io
+  * I am abguimba (https://keybase.io/abguimba) on keybase.
+  * I have a public key ASDgce7_XBzlrH2GaYKsErBcYJYvuuXZdKOcejC9d7rIbwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e071eeff5c1ce5ac7d866982ac12b05c60962fbae5d974a39c7a30bd77bac86f0a",
+      "host": "keybase.io",
+      "kid": "0120e071eeff5c1ce5ac7d866982ac12b05c60962fbae5d974a39c7a30bd77bac86f0a",
+      "uid": "e09def1ecb6680b9cb46264e1b68cf19",
+      "username": "abguimba"
+    },
+    "merkle_root": {
+      "ctime": 1559142158,
+      "hash": "5515112ced901abba3885a3827db193eaa21761432c00450b6b82f4b8d9eb2bd297d0521abccb9cf7b6885138e531a6212c03caf3aa513a06af080c2573247a4",
+      "hash_meta": "8ba48bc6ac603e7b878dfeca36de95e7110eb3464cbd1577d65b381167e038e7",
+      "seqno": 5468789
+    },
+    "service": {
+      "entropy": "u4y2qkzcbaWdpc5jF2uXFFgs",
+      "hostname": "abguimba.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.0.0"
+  },
+  "ctime": 1559142248,
+  "expire_in": 504576000,
+  "prev": "f8c1af3dc15acc93b46ed5d0cb3888cd72ec75eafa549ff269ce408621b5db3b",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg4HHu/1wc5ax9hmmCrBKwXGCWL7rl2XSjnHowvXe6yG8Kp3BheWxvYWTESpcCDMQg+MGvPcFazJO0btXQyziIzXLsder6VJ/yac5AhiG12zvEIP8cSiwI19YsQ3tMgCAsDogLEq+jZStW0OxAORxoIJYrAgHCo3NpZ8RAU07jAXolwKlulVGIbuBNYYIXtv05qZk9aZpPn17xSz7K5gcb9Xi1kOijBXrjCbxhtNWy9PbcKbxCLZs1JZLyBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIB53786ulCoWut/iZw7l2DdYKxHCq6/xk+8ZTzIWOLXBo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/abguimba
+
+==================================================================
