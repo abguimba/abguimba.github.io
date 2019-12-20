@@ -135,24 +135,66 @@
 		<div class="entry-content">
 			<p><em>Tasks&nbsp;Supervisor</em></p>
 <p>@42Born2Code</p>
-<p>In this 42 project we were asked to create a basic version of <a href="https://github.com/Supervisor/supervisor">supervisor</a>.
-We were restricted to our language of choice&#8217;s standard library. Except for the config file&nbsp;parsing.</p>
-<p>The script reads the tasks parameters from the yaml file, and executes some kind of user prompt to effectively manage these&nbsp;tasks.</p>
-<p>The only argument needed is a config file.
-All info about making your own config file is in&nbsp;exampleconfig.yaml.</p>
-<p>Partners in this project -&gt; <a href="https://github.com/toshuomj">@toshuomj</a></p>
-<p><img src="/images/Taskmaster01.gif" alt="Taskmaster01" width="700"/></p>
-<p>To launch the script, you just need to&nbsp;either:</p>
-<div class="highlight"><pre><span></span>$/&gt; python3 taskmaster.py config_files/&lt;yourconfig&gt;.yaml
+<p>In this 42 project we were asked to create a basic version of <a href="https://github.com/Supervisor/supervisor">supervisor</a>.</p>
+<p>Basic task manager that reads from a config.json file and supervises a number of processes.
+We were restricted to our language of choice’s standard library. Except for the config file&nbsp;parsing.</p>
+<p>The script reads the tasks parameters from the json file, and executes some kind of user prompt to effectively manage these&nbsp;tasks.</p>
+<p>The only argument needed is a config file. All info about making your own config file is in&nbsp;exampleconfig.json.</p>
+<h2>Project&nbsp;partners</h2>
+<ul>
+<li><a href="https://github.com/abguimba">Abraham&nbsp;Gimbao</a></li>
+<li><a href="https://github.com/mjose-portfolio">Marc&nbsp;Jose</a></li>
+</ul>
+<h2>Install</h2>
+<ul>
+<li>Not&nbsp;needed.</li>
+</ul>
+<h2>Configuration</h2>
+<ul>
+<li>Create a file in json format with the following&nbsp;characteristics:</li>
+</ul>
+<div class="highlight"><pre><span></span>{
+    <span class="s2">&quot;</span><span class="s">programs</span><span class="s2">&quot;</span>: {                   #<span class="nv">a</span> <span class="nv">list</span> <span class="nv">of</span> <span class="nv">programs</span>
+        <span class="s2">&quot;</span><span class="s">sleep</span><span class="s2">&quot;</span>: {                  #<span class="nv">the</span> <span class="nv">name</span> <span class="nv">of</span> <span class="nv">a</span> <span class="nv">program</span> <span class="o">*</span><span class="nv">Required</span><span class="o">*</span>
+            <span class="s2">&quot;</span><span class="s">cmd</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">sleep 1000</span><span class="s2">&quot;</span>,    #<span class="nv">the</span> <span class="nv">exact</span> <span class="nv">command</span> <span class="nv">to</span> <span class="nv">launch</span> <span class="o">*</span><span class="nv">Required</span><span class="o">*</span>
+            <span class="s2">&quot;</span><span class="s">cmdammount</span><span class="s2">&quot;</span>: <span class="mi">10</span>,       #<span class="nv">the</span> <span class="nv">number</span> <span class="nv">of</span> <span class="nv">times</span> <span class="nv">you</span> <span class="nv">need</span> <span class="nv">to</span> <span class="nv">launch</span> <span class="nv">this</span> <span class="nv">process</span> <span class="o">*</span><span class="nv">Required</span><span class="o">*</span>
+            <span class="s2">&quot;</span><span class="s">autostart</span><span class="s2">&quot;</span>: <span class="nv">true</span>,      #<span class="nv">cmd</span> <span class="nv">started</span> <span class="nv">at</span> <span class="nv">launch</span> <span class="nv">True</span><span class="o">/</span><span class="nv">False</span>? <span class="o">*</span><span class="nv">Required</span><span class="o">*</span>
+            <span class="s2">&quot;</span><span class="s">autorestart</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">never</span><span class="s2">&quot;</span>, #<span class="nv">restart</span> <span class="nv">this</span> <span class="nv">program</span> <span class="nv">on</span> <span class="s2">&quot;</span><span class="s">never</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">always</span><span class="s2">&quot;</span>, <span class="nv">or</span> <span class="nv">on</span> <span class="s2">&quot;</span><span class="s">unexpected</span><span class="s2">&quot;</span> <span class="nv">termination</span> <span class="o">*</span><span class="nv">Required</span><span class="o">*</span>
+            <span class="s2">&quot;</span><span class="s">starttime</span><span class="s2">&quot;</span>: <span class="mi">5</span>,         #<span class="nv">amount</span> <span class="nv">of</span> <span class="nv">time</span> <span class="nv">to</span> <span class="nv">go</span> <span class="nv">by</span> <span class="nv">before</span> <span class="nv">the</span> <span class="nv">program</span> <span class="nv">is</span> <span class="nv">considered</span> <span class="s2">&quot;</span><span class="s">succesfully started</span><span class="s2">&quot;</span> <span class="o">*</span><span class="nv">Required</span><span class="o">*</span>
+            <span class="s2">&quot;</span><span class="s">stoptime</span><span class="s2">&quot;</span>: <span class="mi">10</span>,         #<span class="nv">amount</span> <span class="nv">of</span> <span class="nv">time</span> <span class="nv">to</span> <span class="nv">go</span> <span class="nv">by</span> <span class="nv">after</span> <span class="nv">sending</span> <span class="nv">quitsit</span> <span class="nv">to</span> <span class="nv">program</span> <span class="nv">before</span> <span class="nv">killing</span> <span class="nv">it</span> <span class="nv">completely</span> <span class="nv">with</span> <span class="nv">SIGKILL</span> <span class="o">*</span><span class="nv">Required</span><span class="o">*</span>
+            <span class="s2">&quot;</span><span class="s">restartretries</span><span class="s2">&quot;</span>: <span class="mi">3</span>,    #<span class="nv">amount</span> <span class="nv">of</span> <span class="nv">times</span> <span class="nv">a</span> <span class="nv">program</span> <span class="nv">will</span> <span class="nv">be</span> <span class="nv">tried</span> <span class="nv">to</span> <span class="nv">be</span> <span class="nv">restarted</span> <span class="nv">or</span> <span class="nv">started</span> <span class="nv">at</span> <span class="nv">the</span> <span class="nv">beginning</span> <span class="nv">before</span> <span class="nv">giving</span> <span class="nv">up</span> <span class="nv">on</span> <span class="nv">it</span> <span class="o">*</span><span class="nv">Required</span><span class="o">*</span>
+            <span class="s2">&quot;</span><span class="s">quitsig</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">TERM</span><span class="s2">&quot;</span>,      #<span class="nv">signal</span> <span class="nv">that</span> <span class="nv">will</span> <span class="nv">be</span> <span class="nv">sent</span> <span class="nv">to</span> <span class="nv">the</span> <span class="nv">command</span> <span class="nv">to</span> <span class="nv">be</span> <span class="nv">gracefully</span> <span class="nv">exited</span> <span class="ss">(</span><span class="nv">QUIT</span>, <span class="nv">TERM</span>, <span class="nv">INT</span>, <span class="nv">KILL</span><span class="ss">)</span> <span class="o">*</span><span class="nv">Required</span><span class="o">*</span>
+            <span class="s2">&quot;</span><span class="s">exitcodes</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">None</span><span class="s2">&quot;</span>,    #<span class="nv">exitcodes</span> <span class="nv">that</span> <span class="nv">define</span> <span class="nv">an</span> <span class="nv">expected</span> <span class="nv">termination</span> <span class="k">for</span> <span class="nv">use</span> <span class="nv">autorestart</span> <span class="nv">or</span> <span class="nv">None</span> <span class="k">for</span> <span class="nv">all</span> <span class="nv">exitcodes</span> <span class="nv">being</span> <span class="nv">considered</span> <span class="nv">unexpected</span>
+            <span class="s2">&quot;</span><span class="s">workingdir</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">/tmp/</span><span class="s2">&quot;</span>,  #<span class="nv">working</span> <span class="nv">directory</span> <span class="nv">to</span> <span class="nv">be</span> <span class="nv">set</span> <span class="k">for</span> <span class="nv">the</span> <span class="nv">command</span> <span class="nv">or</span> <span class="nv">None</span> <span class="k">for</span> <span class="nv">same</span> <span class="nv">working</span> <span class="nv">dir</span> <span class="nv">as</span> <span class="nv">parent</span><span class="ss">(</span><span class="nv">taskmaster</span><span class="ss">)</span>
+            <span class="s2">&quot;</span><span class="s">umask</span><span class="s2">&quot;</span>: <span class="mi">0</span>,             #<span class="nv">umask</span> <span class="nv">to</span> <span class="nv">be</span> <span class="nv">set</span> <span class="k">for</span> <span class="nv">the</span> <span class="nv">program</span> <span class="nv">or</span> <span class="nv">None</span> <span class="ss">(</span><span class="nv">in</span> <span class="nv">decimal</span> <span class="ss">(</span><span class="nv">integer</span><span class="ss">)</span><span class="o">!</span><span class="ss">)</span>
+            <span class="s2">&quot;</span><span class="s">stdout</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">None</span><span class="s2">&quot;</span>,       #<span class="nv">option</span> <span class="nv">to</span> <span class="nv">redirect</span> <span class="nv">stdout</span> <span class="nv">to</span> <span class="nv">file</span> <span class="nv">or</span> <span class="nv">to</span> <span class="nv">simple</span> <span class="nv">discard</span> <span class="nv">it</span> <span class="nv">with</span> <span class="s2">&quot;</span><span class="s">discard</span><span class="s2">&quot;</span> <span class="nv">or</span> <span class="nv">None</span>
+            <span class="s2">&quot;</span><span class="s">stderr</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">None</span><span class="s2">&quot;</span>,       #<span class="nv">option</span> <span class="nv">to</span> <span class="nv">redirect</span> <span class="nv">stderr</span> <span class="nv">to</span> <span class="nv">file</span> <span class="nv">or</span> <span class="nv">to</span> <span class="nv">simple</span> <span class="nv">discard</span> <span class="nv">it</span> <span class="nv">with</span> <span class="s2">&quot;</span><span class="s">discard</span><span class="s2">&quot;</span> <span class="nv">or</span> <span class="nv">None</span>
+            <span class="s2">&quot;</span><span class="s">env</span><span class="s2">&quot;</span>: <span class="s2">&quot;</span><span class="s">None</span><span class="s2">&quot;</span>           #<span class="nv">extra</span> <span class="nv">env</span> <span class="nv">parameters</span> <span class="nv">to</span> <span class="nv">provide</span> <span class="nv">to</span> <span class="nv">the</span> <span class="nv">new</span> <span class="nv">process</span>, <span class="s2">&quot;</span><span class="s">None</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="nv">no</span> <span class="nv">environment</span> <span class="nv">at</span> <span class="nv">all</span>, <span class="nv">or</span> <span class="s2">&quot;</span><span class="s">default</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="nv">the</span> <span class="nv">same</span> <span class="nv">env</span> <span class="nv">as</span> <span class="nv">taskmaster</span>
+        }
+    }
+}
 </pre></div>
 
 
-<p>or</p>
-<div class="highlight"><pre><span></span>$/&gt; ./taskmaster.py config_files/&lt;yourconfig&gt;.yaml
-</pre></div>
-
-
-<p>dependencies:&nbsp;yaml</p>
+<h2>Launching&nbsp;method</h2>
+<ul>
+<li><code>python3 taskmaster.py config_files/&lt;yourconfig&gt;.json</code></li>
+</ul>
+<h2>Commands</h2>
+<ul>
+<li><code>help</code>: List available commands with &#8220;help&#8221; or detailed help with &#8220;help&nbsp;cmd&#8221;.</li>
+<li><code>help &lt;command&gt;</code>: Prints the description and the method of use of the&nbsp;command.</li>
+<li><code>start &lt;program&gt;</code>: Starts desired program(s). Usage -&gt; start <program name(s)></li>
+<li><code>stop &lt;program&gt;</code>: Stops desired program(s). Usage -&gt; stop <program name(s)></li>
+<li><code>restart &lt;program&gt;</code>: Restarts desired program(s) that has already been launched. Usage -&gt; restart <program name(s)></li>
+<li><code>reload</code>: Reloads the whole configuration. Usage -&gt;&nbsp;reload</li>
+<li><code>display</code>: Opens a window that shows the pre-loaded configuration and the status of the programs to be&nbsp;monitored.</li>
+</ul>
+<h2>Examples</h2>
+<p><img src="/images/Taskmaster01.gif" alt="Taskmaster01" width="700"/>
+<img src="/images/Taskmaster02.gif" alt="Taskmaster02" width="700"/>
+<img src="/images/Taskmaster03.gif" alt="Taskmaster03" width="700"/>
+<img src="/images/Taskmaster04.gif" alt="Taskmaster04" width="700"/></p>
 <p><a href="https://github.com/abguimba/42-taskmaster">Try it on&nbsp;Github!</a></p>
 <p><a href="PDFs/42-taskmaster.en.pdf">42sh&nbsp;subject</a></p>
 <p><a href="https://github.com/Binary-Hackers/42_Subjects/blob/master/04_Norme/norme_2_0_1.pdf">Norminette&nbsp;subject</a></p>
